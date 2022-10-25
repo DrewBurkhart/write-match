@@ -1,13 +1,8 @@
-// Import the functions you need from the SDKs you need
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { initializeApp } from "firebase/app"
 import { getAnalytics } from "firebase/analytics"
-// import { getStorage } from "firebase/storage"
 import { getFirestore } from "firebase/firestore"
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyA3UoeuUjnT0CwowRRcN8ZR1HEvcxqtjc0",
   authDomain: "write-match.firebaseapp.com",
@@ -18,10 +13,7 @@ const firebaseConfig = {
   measurementId: "G-QLJ1JZRS4P"
 }
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig)
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const analytics = getAnalytics(app)
 export const db = getFirestore(app)
-// defaultStorage = getStorage()
 export default app
